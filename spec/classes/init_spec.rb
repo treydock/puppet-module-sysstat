@@ -83,7 +83,6 @@ describe 'sysstat' do
       context "sysstat::service" do
         it do
           is_expected.to contain_service('sysstat').only_with({
-            :ensure      => 'running',
             :enable      => 'true',
             :name        => 'sysstat',
             :hasstatus   => 'true',

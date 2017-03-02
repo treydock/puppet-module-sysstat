@@ -3,7 +3,6 @@ class sysstat (
   String $package_ensure        = 'present',
   String $package_name          = $sysstat::params::package_name,
   String $service_name          = $sysstat::params::service_name,
-  String $service_ensure        = 'running',
   Boolean $service_enable       = true,
   Boolean $service_hasstatus    = $sysstat::params::service_hasstatus,
   Boolean $service_hasrestart   = $sysstat::params::service_hasrestart,

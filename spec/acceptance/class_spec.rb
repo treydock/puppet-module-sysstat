@@ -17,7 +17,6 @@ describe 'sysstat class:' do
 
     describe service('sysstat') do
       it { should be_enabled }
-      it { should be_running }
     end
 
     describe file('/etc/sysconfig/sysstat') do
