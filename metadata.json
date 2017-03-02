@@ -1,0 +1,29 @@
+{
+  "name": "treydock-sysstat",
+  "version": "0.0.1",
+  "author": "treydock",
+  "summary": "sysstat Puppet module",
+  "license": "Apache 2.0",
+  "source": "git://github.com/treydock/puppet-module-sysstat.git",
+  "issues_url": "https://github.com/treydock/puppet-module-sysstat/issues",
+  "project_page": "https://github.com/treydock/puppet-module-sysstat",
+  "dependencies": [
+    { "name": "puppetlabs/stdlib", "version_range": ">= 3.2.0 <5.0.0" },
+    { "name": "herculesteam/augeasproviders_shellvar", "version_requirement": "2.x" }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [ "6", "7" ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [ "6", "7" ]
+    },
+    {
+      "operatingsystem": "Scientific",
+      "operatingsystemrelease": [ "6", "7" ]
+    }
+  ]
+}
+
