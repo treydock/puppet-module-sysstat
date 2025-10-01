@@ -1,7 +1,6 @@
 # Private class.
 class sysstat::params {
-
-  case $::osfamily {
+  case $facts['os']['family'] {
     'RedHat': {
       $package_name       = 'sysstat'
       $service_name       = 'sysstat'
@@ -11,8 +10,7 @@ class sysstat::params {
     }
 
     default: {
-      fail("Unsupported osfamily: ${::osfamily}, module ${module_name} only support osfamily RedHat")
+      fail("Unsupported osfamily: ${facts['os']['family']}, module ${module_name} only support osfamily RedHat")
     }
   }
-
 }

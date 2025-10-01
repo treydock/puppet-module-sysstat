@@ -32,5 +32,4 @@ class sysstat::config {
     variable => 'ZIP',
     value    => $sysstat::zip,
   }
-
 }

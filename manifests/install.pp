@@ -5,5 +5,4 @@ class sysstat::install {
   package { $sysstat::package_name:
     ensure => $sysstat::package_ensure,
   }
-
 }

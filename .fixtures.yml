@@ -1,11 +1,10 @@
 fixtures:
-  repositories:
+  forge_modules:
     stdlib:
-      repo: git://github.com/puppetlabs/puppetlabs-stdlib.git
-      ref: 4.11.0
+      repo: puppetlabs/stdlib
     augeasproviders_core:
-      repo: git://github.com/hercules-team/augeasproviders_core.git
+      repo: puppet/augeasproviders_core
     augeasproviders_shellvar:
-      repo: git://github.com/hercules-team/augeasproviders_shellvar.git
+      repo: puppet/augeasproviders_shellvar
   symlinks:
     sysstat: "#{source_dir}"
